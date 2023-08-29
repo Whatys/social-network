@@ -1,0 +1,12 @@
+CREATE TABLE users (
+user_id BIGINT GENERATED ALWAYS AS IDENTITY NOT NULL,
+first_name VARCHAR(255) NOT NULL,
+last_name VARCHAR(255) NOT NULL,
+username VARCHAR(255) NOT NULL,
+email VARCHAR(255) NOT NULL,
+birthday DATE,
+password VARCHAR(255) NOT NULL,
+password_confirmation VARCHAR(255) NOT NULL,
+PRIMARY KEY (user_id)
+);
+
